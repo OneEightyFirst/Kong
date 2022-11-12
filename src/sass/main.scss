@@ -1,5 +1,4 @@
-@import "variables";
-@import "fonts";
+
 
 
 // Bootstrap imports
@@ -42,11 +41,20 @@
 @import "~bootstrap/scss/helpers";
 @import "~bootstrap/scss/utilities/api";
 
+@import "variables";
+@import "fonts";
 
-// @import "./components/index";
+@import "./components/backgrounds";
 
-//
+// NAV
+body {
+  padding-top: 50px;
+}
 
+.component {
+  padding-top:50px;
+  padding-bottom:50px;
+}
 // UPDATES 
 .btn {
   margin-right: 1.5rem;

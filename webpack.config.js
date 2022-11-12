@@ -93,6 +93,7 @@ module.exports = (env, options) => ({
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
+    assetModuleFilename: 'images/[name][ext][query]',
     publicPath: "",
   },
 });

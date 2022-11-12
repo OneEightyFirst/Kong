@@ -1,0 +1,100 @@
+[class^="bg-pos-"],
+[class*=" bg-pos-"] {
+    background-size: auto !important;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        .bg-pos#{$infix} {
+            &-cc {
+                background-position: center center !important;
+            }
+
+            &-ct {
+                background-position: center top !important;
+            }
+
+            &-rc {
+                background-position: right center !important;
+            }
+
+            &-cb {
+                background-position: center bottom !important;
+            }
+
+            &-lc {
+                background-position: left center !important;
+            }
+
+            &-rt {
+                background-position: right top !important;
+            }
+
+            &-lt {
+                background-position: left top !important;
+            }
+
+            &-rb {
+                background-position: right bottom !important;
+            }
+
+            &-lb {
+                background-position: left bottom !important;
+            }
+        }
+    }
+}
+/* ============================== */
+/*  BACKGROUND REPEAT
+/* ============================== */
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        .bg#{$infix} {
+            &-no-repeat {
+                background-repeat: no-repeat !important;
+            }
+
+            &-none {
+                background-repeat: no-repeat !important;
+            }
+
+            &-x {
+                background-repeat: repeat-x !important;
+            }
+
+            &-y {
+                background-repeat: repeat-y !important;
+            }
+        }
+    }
+}
+
+
+/* ============================== */
+/*  BACKGROUND SIZE
+/* ============================== */
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        .bg-size#{$infix} {
+            &-auto {
+                background-size: auto !important;
+            }
+
+            &-contain {
+                background-size: contain !important;
+            }
+
+            &-cover {
+                background-size: cover !important;
+            }
+        }
+    }
+}
