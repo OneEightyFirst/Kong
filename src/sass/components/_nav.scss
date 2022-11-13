@@ -1,0 +1,60 @@
+/* ============================== */
+/*  COMBINED NAVIGATION STYLES
+/* ============================== */
+$transition:     all 500ms ease;
+.navbar {
+    background-color: rgba($white, 0.8);
+    transition: $transition;
+    .logo-text {
+        transition: $transition;
+        fill:$dark-blue;
+    }
+    .nav-item {
+        padding-left:$spacer * 1.25;
+        padding-right:$spacer * 1.25;
+        padding-top:$spacer;
+        padding-bottom:$spacer;
+        @media (min-width: breakpoint-min(md)) {
+            padding-top:0;
+            padding-bottom:0;
+        }
+
+        .nav-link {
+            color:$primary;
+            font-weight: $font-weight-medium;
+            padding:0;
+        }
+    }
+    &.top {
+        .logo-text {
+            transition: $transition;
+            fill:$white;
+        }
+        transition: $transition;
+        background-color: $primary;
+        .nav-item {
+            .nav-link {
+                color:$white;
+            
+            }
+        }
+        .btn {
+            background-color: $white;
+            color:$primary;
+            &:hover {
+                background-color: darken($primary, 10%) !important;
+                color:$white;
+            }
+        }
+    }
+
+    .newsletter-input {
+        min-width: 256px;
+        height: fit-content;
+        font-size: $font-size-px-base * 1.125;
+        &::placeholder {
+            font-weight: $font-weight-medium;
+            color:rgba($primary, 0.5);
+        }
+    }
+}

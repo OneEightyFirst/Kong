@@ -23,3 +23,4 @@ function submitViaAjax(formData) {
   var json = JSON.stringify(object);
   console.log(json);
 }
+

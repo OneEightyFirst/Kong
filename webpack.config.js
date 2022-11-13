@@ -9,6 +9,7 @@ const path = require("path");
 const globSync = require("glob").sync;
 
 module.exports = (env, options) => ({
+  mode: 'development',
   entry: ["./src/index.js"],
   devServer: {
     contentBase: "./dist",
@@ -16,6 +17,35 @@ module.exports = (env, options) => ({
   devtool: "source-map",
   module: {
     rules: [
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+        options: {
+          attributes: {
+            list: [
+              '...',
+              // NOTE: This is not future proof and I hate it, but since 
+              //       this isn't the point of the assessment I decided 
+              //       to move on and look into this after the fact.
+              {
+                tag: 'section',
+                attribute: 'data-bg-image',
+                type: 'src'
+              },
+              {
+                tag: 'section',
+                attribute: 'data-bg-image-md',
+                type: 'src'
+              },
+              {
+                tag: 'section',
+                attribute: 'data-bg-image-lg',
+                type: 'src'
+              },
+            ]
+          }
+        }
+      },
       {
         test: /\.scss$/,
         use: [
@@ -53,10 +83,7 @@ module.exports = (env, options) => ({
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
-      {
-        test: /\.html$/i,
-        loader: "html-loader",
-      },
+      
     ],
   },
   plugins: [
@@ -93,7 +120,6 @@ module.exports = (env, options) => ({
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
-    assetModuleFilename: 'images/[name][ext][query]',
     publicPath: "",
   },
 });

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+/* ============================== */
+/*  UPDATE TO BOOTSTRAP FONTS
+/* ============================== */
+body {
+    font-size: $font-size-px-base; //16px
+    line-height: 1.5rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: $font-weight-bold !important;
+}
+h1 {
+    font-size: $font-size-px-base * 1.875;  // 30px
+
+    @media (min-width: breakpoint-min(md)) {
+        font-size: $font-size-px-base * 3;  // 48px
+        line-height: $font-size-px-base * 3.6; // 57px
+        margin-bottom: $font-size-px-base * 1.5; // 24px
+
+    }
+}
+h2 {
+    font-size: $font-size-px-base * 1.75;  // 28px
+
+    @media (min-width: breakpoint-min(md)) {
+        font-size: $font-size-px-base * 2.25;  // 36px
+        margin-bottom: $font-size-px-base * 1.5; // 24px
+
+    }
+}
+h3 {    
+    font-size: $font-size-px-base * 1.375;  // 22px
+    line-height: $font-size-px-base * 1.625; // 26
+    margin-bottom: $font-size-px-base * 1; // 16px
+}
+h4 {
+    font-size: $font-size-px-base * 1.25;  // 20px
+    margin-bottom: $font-size-px-base * 1; // 16px
+}

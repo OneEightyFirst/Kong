@@ -1,0 +1,13 @@
+.component {
+  padding-bottom: $spacer * 6.25; // 100px
+  padding-top: $spacer * 6.25; // 100px
+  &.hero {
+    padding-top: $spacer * 5; // 80px
+    padding-bottom: $spacer * 5; // 80px
+    @media (min-width: breakpoint-min(md)) {
+      padding-top: $spacer * 8.125; // 130px
+      padding-bottom: $spacer * 8.125; // 130px
+    }
+
+  }
+}

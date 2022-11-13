@@ -1,0 +1,34 @@
+/* ============================== */
+/*  BUTTON STYLES
+/* ============================== */
+.btn {
+    font-size: $font-size-px-base * 1.125; // 18px
+    margin-right: 1.5rem;
+    padding: 12px 29px;
+    &.btn-link {
+      padding: 0;
+      text-decoration: none;
+      &:after {
+        content:' →';
+        transition: padding 0.3s;
+  
+      }
+      &:hover {
+        filter: brightness(85%);
+        &:after {
+          padding-left: 3px;
+          transition: padding 0.3s;
+        }
+      }
+    }
+  }
+
+/* ============================== */
+/*  UPDATE BOOTSTRAP BUTTON  
+/*  STYLES TO MATCH BRAND
+/* ============================== */
+  @each $color, $value in $theme-colors {
+    .btn-outline-#{$color}:hover {
+      background-color:darken($value, 10%) !important;
+    }
+  }

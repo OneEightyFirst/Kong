@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Kong</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container-fluid container-md">
+        <nav class="navbar top fixed-top navbar-expand-xl navbar-dark">
+            <div class="container-fluid container-xxl">
               <a class="navbar-brand" href="#">
-                <img src="./assets/logo-kong.svg" />
+                <svg width="104" height="35" viewBox="0 0 104 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="logo-text" fill-rule="evenodd" clip-rule="evenodd" d="M95.1345 23.5867H100.126V15.8469H95.1345V23.5867ZM100.098 12.8063H103.932V27.1802C103.932 29.5574 103.683 29.972 103.049 30.6078C102.553 31.133 101.753 31.3818 100.374 31.3818H94.7762L93.0389 29.4468V28.6452H100.098V26.6826H95.2726C93.8111 26.6826 93.0665 26.4062 92.4598 25.7981C91.6601 24.9688 91.3292 23.1721 91.3292 19.7721C91.3292 16.3722 91.7153 14.4925 92.5425 13.6356C93.1768 13.0275 93.9489 12.7787 95.3277 12.7787L98.1957 12.8063L100.098 14.5478V12.8063ZM54.8734 8.9917H59.3959L52.8879 17.2843L59.6716 26.655H54.8734L49.7166 19.3022H48.5033V26.655H44.422V8.9917H48.5033V15.8469H49.7166L54.8734 8.9917ZM84.6558 17.1738V15.9022H83.2769C83.2494 15.9022 83.2494 15.9022 83.2218 15.9022H82.1463C82.1187 15.9022 82.1187 15.9022 82.0912 15.9022H79.9678V17.1738V26.5997H76.1623V12.8063H78.6717H79.9678V13.0551V14.5478L81.8706 12.8063H82.9736C83.1391 12.7787 83.3321 12.7787 83.5251 12.7787H85.1797C86.3379 12.7787 87.0825 13.0275 87.6064 13.5527C88.1855 14.1055 88.4061 14.8242 88.4061 16.8697V26.5997H84.6006V17.3396C84.6558 17.2843 84.6558 17.2291 84.6558 17.1738ZM64.6077 23.5589H69.599V15.8192H64.6077V23.5589ZM64.7734 26.5997C63.3946 26.5997 62.65 26.3786 62.0709 25.7428C61.1885 24.8306 60.83 23.5867 60.83 19.6892C60.83 15.764 61.1885 14.5478 62.0709 13.608C62.65 12.9998 63.3946 12.7787 64.7734 12.7787H69.4062C70.785 12.7787 71.5296 12.9998 72.1087 13.608C72.9911 14.5478 73.3496 15.764 73.3496 19.6892C73.3496 23.6144 72.9911 24.8306 72.1087 25.7428C71.502 26.3786 70.785 26.5997 69.4062 26.5997H64.7734Z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6519 29.8067L12.607 28.6333H19.5927L23.2493 33.1631L22.6216 34.6912H13.5621L13.7804 33.1631L11.6519 29.8067Z" fill="#159ECB"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2715 14.0889L17.5461 8.3584H21.3391L38.4213 28.5514L37.0842 34.6912H29.7711L30.2349 32.9721L14.2715 14.0889Z" fill="#0EB399"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1736 6.9122L19.7291 4.04698L24.3134 0.28125L32.2269 6.53017L31.2172 7.5944L32.5816 9.50455V11.5784L28.6522 14.7984L22.0212 6.9122H18.1736Z" fill="#3DB664"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.67588 20.0102H7.83162L13.3983 15.2349L20.7661 23.9943L18.6922 27.2142H11.8702L7.17671 33.2994L6.11248 34.6911H0V27.2142L5.67588 20.0102Z" fill="#17BDCB"/>
+                </svg>
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,7 +24,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Products</a>
+                    <a class="nav-link" href="#">Products</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Open Source</a>
@@ -35,19 +39,30 @@
                     <a class="nav-link" href="#">Company</a>
                   </li>
                 </ul>
-                <form class="newsletter-signup d-flex">
-                  <input class="form-control me-2" type="email" name="email" placeholder="Email" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Subscribe</button>
+                <form class="newsletter-signup d-flex align-items-center">
+                  <input class="newsletter-input form-control me-4" type="email" name="email" placeholder="Email" aria-label="Search">
+                  <input type="hidden" name="utm_source" value=""> 
+                  <input type="hidden" name="utm_campaign" value=""> 
+                  <input type="hidden" name="utm_medium" value=""> 
+                  <input type="hidden" name="utm_content" value=""> 
+                  <input type="hidden" name="utm_term" value=""> 
+                  <input type="hidden" name="utm_ad_group" value=""> 
+                  <input type="hidden" name="gclid" value=""> 
+                  <input type="hidden" name="city" value=""> 
+                  <input type="hidden" name="state" value=""> 
+                  <input type="hidden" name="country" value="">
+                  <button class="btn btn-primary" type="submit">Subscribe</button>
                 </form>
               </div>
             </div>
           </nav>
-    </header> 
+    </header>
     <main>
-        <section class="component hero bg-no-repeat bg-size-contain bg-pos-rc" data-bg-image="images/hero-enterprise.svg">
+        <section class="component hero bg-no-repeat bg-size-cover bg-pos-cc" data-bg-image="./assets/hero-enterprise-mobile.svg" data-bg-image-md="./assets/hero-enterprise-tablet.svg" data-bg-image-lg="./assets/hero-enterprise.svg">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-lg-6">
+                        <img class="mb-4" src="./assets/logo-enterprise.svg" alt="Kong Enterprise">
                         <h1>Take control of your APIs across any environment</h1>
                         <h3>Kong Enterprise is the fastest, most feature-advanced, and secure API management solution built on Kong Gateway — the worlds most adopted API gateway.</h3>
                         <p class="mb-4">Modernize legacy applications, deliver outstanding digital customer experiences, and accelerate your time to market — with enterprise plugins, developer portal, analytics, advanced security, user interface, and 24/7 production-ready support.</p>
@@ -59,206 +74,85 @@
         </section>
         <section class="component">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 order-md-1">
-                        <img class="mx-auto d-block img-fluid" loading="lazy" width="400" alt="Developer Portal Diagram" src="https://konghq.com/wp-content/themes/konghq/assets/img/products/kong-ent-short-diagram.svg">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-5 order-md-1">
+                        <img class="mx-auto d-block img-fluid mb-5 mb-md-0" loading="lazy" width="400" alt="Developer Portal Diagram" src="https://konghq.com/wp-content/themes/konghq/assets/img/products/kong-ent-short-diagram.svg">
                     </div>
                     <div class="col-md-6">
                         <h2>Unleash developer productivity — and your organization's potential</h2>
                         <h4>Strip away tedious dev tasks, and reap the rewards of developer-driven innovation.</h4>
-                        <ul>
-                            <li>Provide APIs as a product to internal and external teams to locate, access, and consume through the customizable Developer Portal.</li>
-                            <li>Add functionality to APIs and services with a wide range of out-of-the-box <a href="https://docs.konghq.com/hub/">plugins</a> and boost developer efficiency.</li>
-                            <li>Avoid configuration drift by enabling declarative configuration and remove manual coding tasks by integrating all service types into existing CI/CD pipelines.</li>
-                            <li>Streamline developer onboarding process with Role-Based Access Control (RBAC).</li>
-                            <li>Integrate with <a href="https://insomnia.rest/">Kong Insomnia</a> to accelerate development of REST, GraphQL, Kafka, and gRPC services, increase collaboration, and standardize processes across teams.</li>
+                        <ul class="mb-0">
+                            <li class="mb-3">Provide APIs as a product to internal and external teams to locate, access, and consume through the customizable Developer Portal.</li>
+                            <li class="mb-3">Add functionality to APIs and services with a wide range of out-of-the-box <a href="https://docs.konghq.com/hub/">plugins</a> and boost developer efficiency.</li>
+                            <li class="mb-3">Avoid configuration drift by enabling declarative configuration and remove manual coding tasks by integrating all service types into existing CI/CD pipelines.</li>
+                            <li class="mb-3">Streamline developer onboarding process with Role-Based Access Control (RBAC).</li>
+                            <li class="mb-3">Integrate with <a href="https://insomnia.rest/">Kong Insomnia</a> to accelerate development of REST, GraphQL, Kafka, and gRPC services, increase collaboration, and standardize processes across teams.</li>
                         </ul>
                         <a class="btn btn-link" href="https://konghq.com/solutions/create-a-developer-platform">Learn more</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="component">
+        <section class="component bg-light">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-fluid" loading="lazy" width="629" height="433" alt="Kong Enterprise Traffic Overview" src="https://konghq.com/wp-content/themes/konghq/assets/img/products/centralize.svg">
+                <div class="row justify-content-between">
+                    <div class="col-md-5">
+                        <img class="mx-auto d-block img-fluid mb-5 mb-md-0 ms-0" loading="lazy" width="629" alt="Kong Enterprise Traffic Overview" src="https://konghq.com/wp-content/themes/konghq/assets/img/products/centralize.svg">
                     </div>
                     <div class="col-md-6">
                         <h2>Centralize and simplify management</h2>
-                        <strong>Deliver connected digital customer experiences across clouds, platforms, and protocols. Kong Enterprise gives you one solution for bare metal to cloud native, monolith to microservices, mesh and beyond.</strong>
-                        <ul class="mt-2x pl-1x">
-                            <li class="mb-1">Kong
-                                    Enterprise works with
-                                    emerging and legacy technologies, supporting multi-cloud, hybrid cloud, and on-prem
-                                    and Kubernetes and
-                                    VM-based deployments at scale.</li>
-                            <li class="mb-1">Natively support gRPC and REST,
-                                    WebSockets and integrate with Apollo GraphQL server and Apache Kafka
-                                    services.</li>
-                            <li class="mb-1">The
-                                    elegant Kong Manager
-                                    interface and simple one-click operations make managing and monitoring services
-                                    across your entire
-                                    organization easy. </li>
+                        <h4>Deliver connected digital customer experiences across clouds, platforms, and protocols. Kong Enterprise gives you one solution for bare metal to cloud native, monolith to microservices, mesh and beyond.</h4>
+                        <ul class="mb-0">
+                            <li class="mb-3">Kong Enterprise works with emerging and legacy technologies, supporting multi-cloud, hybrid cloud, and on-prem and Kubernetes and VM-based deployments at scale.</li>
+                            <li class="mb-3">Natively support gRPC and REST, WebSockets and integrate with Apollo GraphQL server and Apache Kafka services.</li>
+                            <li class="mb-3">The elegant Kong Manager interface and simple one-click operations make managing and monitoring services across your entire organization easy. </li>
                         </ul>
-                        <a class="mt-1x d-inline-block"
-                            href="https://konghq.com/learning-center/api-management/what-is-api-management">
-                            <span class="font-weight-bold">Learn more →</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="component media-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 order-md-1">
-                        <img class="mx-sm-auto d-block img-fluid" loading="lazy" width="629" alt="Kong Enterprise Plugins" src="https://konghq.com/wp-content/themes/konghq/assets/img/products/simplify.svg" />
-                    </div>
-                    <div class="col-md-6">
-                        <h2>Simplify API security and governance</h2>
-                        <strong>Ideal for air-gapped deployments. Easily apply API security best practices, and speed up
-                            delivery
-                            without sacrificing on security and compliance. </strong>
-                        <ul class="mt-2x pl-1x">
-                            <li class="mb-1">
-                                
-                                    Empower development teams to consistently apply fine-grained security and traffic
-                                    policies via plugins, including
-                                    mutual TLS, OpenID Connect, Open Policy Agent, OAuth 2.0, and many more.
-                                </span>
-                            </li>
-                            <li class="mb-1">
-                                
-                                    Kong Enterprise is self-managed
-                                    and features a FIPS 140-2 compliant gateway, making it ideal for highly regulated
-                                    industries with strict
-                                    compliance and security considerations.
-                                </span>
-                            </li>
-                            <li class="mb-1">
-                                
-                                    Get out-of-the-box support for
-                                    third-party secrets managers, such as AWS Secrets Manager and Hashicorp Vault, for
-                                    centrally managing and storing secrets.
-                                </span>
-                            </li>
-                        </ul>
-                        <a class="mt-1x d-inline-block" href="https://konghq.com/solutions/secure-and-govern-apis">
-                            <span class="font-weight-bold">Learn more →</span>
-                        </a>
+                        <a class="btn btn-link" href="https://konghq.com/learning-center/api-management/what-is-api-management">Learn more</a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="component">
-            <div class="row">
-                <div class="media">
-                    <img class="mx-sm-auto d-block mb-2x mb-lg-0" loading="lazy" width="579" height="548"
-                        alt="Kong on Kubernetes Diagram"
-                        src="https://konghq.com/wp-content/themes/konghq/assets/img/products/kubernetes.svg">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-6 order-md-1">
+                        <img class="mx-auto d-block img-fluid mb-5 mb-md-0" loading="lazy" width="629" alt="Kong Enterprise Plugins" src="https://konghq.com/wp-content/themes/konghq/assets/img/products/simplify.svg" />
+                    </div>
+                    <div class="col-md-5">
+                        <h2>Simplify API security and governance</h2>
+                        <h4>Ideal for air-gapped deployments. Easily apply API security best practices, and speed up delivery without sacrificing on security and compliance. </h4>
+                        <ul class="mb-0">
+                            <li class="mb-3">Empower development teams to consistently apply fine-grained security and traffic policies via plugins, including mutual TLS, OpenID Connect, Open Policy Agent, OAuth 2.0, and many more.</li>
+                            <li class="mb-3">Kong Enterprise is self-managed and features a FIPS 140-2 compliant gateway, making it ideal for highly regulated industries with strict compliance and security considerations.</li>
+                            <li class="mb-3">Get out-of-the-box support for third-party secrets managers, such as AWS Secrets Manager and Hashicorp Vault, for centrally managing and storing secrets.</li>
+                        </ul>
+                        <a class="btn btn-link" href="https://konghq.com/solutions/secure-and-govern-apis">Learn more</a>
+                    </div>
                 </div>
-                <div class="content">
-
-                    <h2>Run natively on Kubernetes</h2>
-                    <strong>100% Kubernetes-native architecture and interfaces let you take full advantage of the
-                        power of
-                        Kubernetes.</strong>
-                    <ul class="mt-2x pl-1x">
-                        <li class="mb-1">
-                            
-                                Configure Kong Gateway the same way as Kubernetes with Kong Ingress Controller.
-                            </span>
-                        </li>
-                        <li class="mb-1">
-                            
-                                Implement traffic management, transformations, and observability across Kubernetes
-                                clusters with zero downtime.
-                            </span>
-                        </li>
-                    </ul>
-                    <a class="mt-1x d-inline-block" href="https://konghq.com/solutions/build-on-kubernetes">
-                        <span class="font-weight-bold">
-                            Build on Kubernetes →
-                        </span>
-                    </a>
+            </div>
+        </section>
+        <section class="component pt-0">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-5">
+                        <img class="mx-auto d-block img-fluid mb-5 mb-md-0 ms-0" loading="lazy" width="579" alt="Kong on Kubernetes Diagram" src="https://konghq.com/wp-content/themes/konghq/assets/img/products/kubernetes.svg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Run natively on Kubernetes</h2>
+                        <h4>100% Kubernetes-native architecture and interfaces let you take full advantage of the power of Kubernetes.</h4>
+                        <ul class="mb-0">
+                            <li class="mb-3">Configure Kong Gateway the same way as Kubernetes with Kong Ingress Controller.</li>
+                            <li class="mb-3">Implement traffic management, transformations, and observability across Kubernetes clusters with zero downtime.</li>
+                        </ul>
+                        <a class="btn btn-link" href="https://konghq.com/solutions/build-on-kubernetes">Build on Kubernetes</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <!-- Footer -->
-    <footer class="page-footer font-small blue pt-4">
-
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left">
-
-            <!-- Grid row -->
-            <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
-
-                    <!-- Content -->
-                    <h5 class="text-uppercase">Footer Content</h5>
-                    <p>Here you can use rows and columns to organize your footer content.</p>
-
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none pb-3">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-            </div>
-            <!-- Grid row -->
-        </div>
-        <!-- Footer Links -->
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright: <a href="https://konghq.com"> KongHQ.com</a>
-        </div>
-        <!-- Copyright -->
+    <footer class="border border-top text-center">
+        <p class="my-2">&copy; Kong Inc. 2022</p>
     </footer>
-    <!-- Footer -->
 </body>
 
 </html>
