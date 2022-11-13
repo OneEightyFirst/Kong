@@ -1,5 +1,5 @@
 
-<h2 align="center">webpack-sass-bootstrap-boilerplate</h2>
+<h2 align="center">Kong assessment</h2>
 
 <p align="center">
   <a href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/blob/master/LICENSE.md">
@@ -28,45 +28,6 @@
   </em>
 </p>
 
-This Webpack Sass Bootstrap boilerplate starter contains the features and scripts you need
-to get started quickly with Webpack bundling and building, Live Loading,gzip-compression and creating a dev server.
-
-It contains the following features:
-
-- Webpack 5 bundling
-- Babel ES6 Compiler
-- Sass Compiler
-- Bootstrap v4
-- jQuery 3.5.1
-- Popper.js 
-- Webpack Dev Server
-- Generates `gzip` of both css and js files  
-
-
-## Check Out Our Documentation
-If you want to check out our official documentation, just click [here](https://shaminmeerankutty.github.io/webpack-sass-bootstrap-boilerplate/). 
-
-It contains guidance on setting up this starter, as well as feature outlines.
-
-## Features
-
-### Webpack Loaders
-This starter contains the following webpack loaders:
-
-* Sass Loader for compiling sass (SCSS)
-* File Loader for loading asset files
-* HTML Loader for loading HTML files
-* Babel Loader for compiling ES6 code
-
-### Webpack Plugins 
-The following webpack plugins are also included:
-
-* Extract Text Plugin for extracting CSS files
-* Clean Webpack Plugin for cleaning unwanted files in dist directory
-* HTML Webpack Plugin for generating HTML files
-* Webpack Provider Plugin for providing jQuery & popper js to Bootstrap
-* Glob for matching HTML files
-
 ## Getting Started
 
 ### Requirements
@@ -76,11 +37,7 @@ for installing dependencies, starting the appropriate scripts, and building your
 ### Quick Start
 Clone the repo:
 
-    git clone https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate.git
-
-Navigate to the project folder:
-
-    cd webpack-sass-bootstrap-boilerplate
+    git clone https://github.com/OneEightyFirst/Kong.git
 
 Install all packages and dependencies required for this project:
 
@@ -109,6 +66,24 @@ experiment with the changes live.)
 ```sass
     @import "filename";
 ```
+
+
+### Considerations, Assumptions, and Trade-Offs
+While working on this I took several liberties, those included: 
+* Changing the noted margin/padding from the mockup so that all spacing was more consistant.
+* Changed some Header tags to create a more accurate higherarchy
+* Created a set of buttons
+* Having never used the Media Object contstruct I opted to remove it and used a process I was more familiar with in order to guarantee the result. 
+* Updating the break points to match what is used on KongHQ.com. 
+* Added in a script for an easier to use responsive background image.
+  * Note: This was more difficult than it should have been due to my lack of knowledge about Webpack and was the primary time sink. Knowing that the environtment that this would be traditionally built it would have code copied and pasted, having a way to edit background images w/out having to update css means there are fewer inline css updates. Once I become more familiar with Webpack, I feel I can make this process more efficient. 
+
+Since the footer was not mentioned in the instructions, I removed the boiler plate and put a clean and simple slightly branded version in its place. 
+
+
+
+
+
 
 # Licence
 Code released under the [MIT License](LICENSE.md).

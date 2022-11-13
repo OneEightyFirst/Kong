@@ -69,12 +69,14 @@ function throttle(func, wait) {
 /*  TRANSITION ANIMATION SCRIPT FOR NAVIGATION
 /* ========================================================================================== */
     function navTransition() {
-        if ($(window).width() > 992) {
+        if ($(window).width() > 1199) {
             if ($(this).scrollTop() > $('.navbar').outerHeight()) {
                 $('.navbar').addClass("top");
             }else{
                 $('.navbar').removeClass("top");
             }   
+        } else {
+            $('.navbar').addClass("top");
         }
     }
     navTransition();
